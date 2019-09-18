@@ -26,12 +26,13 @@
                                <p> <br/><input type="submit" class='btn btn-success'name="convert1" value="convert" > </p>
                             </form>
                         </p>
-                        
-                      <?php  
+                        <p class="alert alert-danger">
+                    <?php  
                     
                       $input->input_for_USD(); 
                       
-                      ?>
+                    ?>
+                    </p>
                     </div>
                 </div>
             <!--/div-->
