@@ -21,13 +21,17 @@
                         <p class="card-text"> <!-- input takes here-->
                             <form action="" method="POST">
                                 <label> Enter Ammount </label>
-                                <input type='text' name="two" placeholder="Enter Ammount"> 
+                                <input type='text' name="one" placeholder="Enter Ammount"> 
                                 
-                               <p> <br/><input type="submit" class='btn btn-success'name="convert" value="convert" > </p>
+                               <p> <br/><input type="submit" class='btn btn-success'name="convert1" value="convert" > </p>
                             </form>
                         </p>
                         
-                        
+                      <?php  
+                    
+                      $input->input_for_USD(); 
+                      
+                      ?>
                     </div>
                 </div>
             <!--/div-->
@@ -42,11 +46,12 @@
                                 <label> Enter Ammount </label>
                                 <input type='text' name="two" placeholder="Enter Ammount"> 
                                 
-                               <p> <br/><input type="submit" class='btn btn-success'name="convert" value="convert" > </p>
+                               <p> <br/><input type="submit" class='btn btn-success'name="convert2" value="convert" > </p>
                             </form>
                         </p>
-                        
-                        
+                        <p class="alert alert-danger">
+                      <?php $input->input_for_JPY(); ?>
+                    </p>
                     </div>
                 </div>
             <!--div-->
@@ -58,13 +63,14 @@
                         <p class="card-text"> <!-- input takes here-->
                             <form action="" method="POST">
                                 <label> Enter Ammount </label>
-                                <input type='text' name="two" placeholder="Enter Ammount"> 
+                                <input type='text' name="three" placeholder="Enter Ammount"> 
                                 
-                               <p> <br/><input type="submit" class='btn btn-success'name="convert" value="convert" > </p>
+                               <p> <br/><input type="submit" class='btn btn-success'name="convert3" value="convert" > </p>
                             </form>
                         </p>
-                        
-                        
+                        <p class="alert alert-danger">
+                        <?php $input->input_for_GBP(); ?>
+                        </p>
                     </div>
                 </div>
                 <div class="card"style="width: 20rem;">
@@ -74,13 +80,14 @@
                         <p class="card-text"> <!-- input takes here-->
                             <form action="" method="POST">
                                 <label> Enter Ammount </label>
-                                <input type='text' name="two" placeholder="Enter Ammount"> 
+                                <input type='text' name="four" placeholder="Enter Ammount"> 
                                 
-                               <p> <br/><input type="submit" class='btn btn-success'name="convert" value="convert" > </p>
+                               <p> <br/><input type="submit" class='btn btn-success'name="convert4" value="convert" > </p>
                             </form>
                         </p>
-                        
-                        
+                        <p class="alert alert-danger">
+                       <?php  $input->input_for_EUR(); ?>
+                        </p>
                     </div>
                 </div>
         </div>
@@ -88,3 +95,11 @@
     </body>
 
 </html>
+
+<?php 
+
+
+
+
+
+?>

@@ -31,7 +31,7 @@
                 return 0;
         }
     }
-        public function convert_BTD_to_EUR(){
+        public function convert_BTD_to_EUR($ammount_bdt){
             if($ammount_bdt>0){
             $result = $ammount_bdt/self::BDT_EUR;
                 return $result;
@@ -45,4 +45,11 @@
     }
 
     $currency  = new Currency;
+
+    // testing the curency converter
+    //echo $currency->convert_BTD_to_USD(100);
+    //echo $currency->convert_BTD_to_JPY(100);
+    //echo $currency->convert_BTD_to_GBP(100);
+    //echo $currency->convert_BTD_to_EUR(100);
+
 ?>
